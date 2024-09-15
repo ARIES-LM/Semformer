@@ -7,7 +7,8 @@ Next-token prediction serves as the dominant component in current neural languag
 
 ## Requirement
 transformers==4.40
-torch==
+
+torch>=2.0+cu121
 
 ## Next-Token-Failures
 
