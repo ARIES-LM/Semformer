@@ -1,8 +1,6 @@
 # Semformer
 
-<p align='center'>
-<img src='lexm0616-1.png' style='width: 50%; '>
-</p>
+[![Sem](model-1.png)]
 
 
 Next-token prediction serves as the dominant component in current neural language models. During the training phase, the model employs teacher forcing, which involves predicting tokens based on all preceding ground truth tokens. However, this approach has been found to create shortcuts, utilizing the revealed prefix to spuriously fit future tokens, potentially compromising the accuracy of the next-token predictor. In this paper, we introduce Semformer, a novel method of training a Transformer language model that explicitly models the semantic planning of response. Specifically, we incorporate a sequence of planning tokens into the prefix, guiding the planning token representations to predict the latent semantic representations of the response, which are induced by an autoencoder. In a minimal planning task (i.e., graph path-finding), our model exhibits near-perfect performance, effectively mitigating shortcut learning-a feat that standard training and baselines fail to achieve. Furthermore, we pretrain Semformer from scratch with 125M parameters, demonstrating its efficacy through measures of perplexity, in-context learning, and fine-tuning on summarization tasks.
